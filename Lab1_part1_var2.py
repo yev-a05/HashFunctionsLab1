@@ -87,5 +87,4 @@ confidence_interval = stats.t.interval(0.95, len(hashes)-1, loc=mean, scale=std_
 # Виводимо результати
 print(f"Математичне очікування (середнє): {mean}")
 print(f"Дисперсія: {variance}")
-print(f"Стандартне відхилення: {std_dev}")
 print(f"Довірчий інтервал (95%): ({confidence_interval[0].item()}, {confidence_interval[1].item()})")
